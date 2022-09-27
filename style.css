@@ -1,0 +1,223 @@
+:root {
+    --main-color: #414641;
+    --secondary-color: #4c514c;
+    --alt-color: #7a8a80;
+    --background-color: #f4f6f3;
+  }
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+body{
+ font-family:'Reem Kufi Fun',sans-serif;
+      
+}
+/*hero*/
+ h1{
+    color:var(--main-color);
+    font-size:78px;
+    font-weight:400;
+    letter-spacing: 10px;
+}
+@media (max-width:480px){
+  h1{
+    font-size: 50px;
+  }
+}
+header{
+    margin:20px;
+    width:calc(100% - 40px);
+    height:calc(100vh - 40px);
+    background-image: url(https://admincontent.bimobject.com/public/topbanner/805c168b-ea2e-4e37-8721-0457acf14e2f?ver=1654865658);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:right center;
+}
+@media (max-width:480px){
+    header{
+        margin:10px;
+        width:calc(100% - 20px);
+        height:calc(100vh - 20px);
+        background-position:center bottom;
+    }
+}
+.header-content{
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+header p{
+    color:var(--secondary-color);
+    font-size:24px;
+}
+.underline{
+    width:10%;
+    height:5px;
+    background-color: var(--alt-color);
+}
+header nav a{
+    text-decoration: none;
+    color:var(--main-color);
+}
+.desktop-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 0 40px;
+}
+
+@media (max-width: 480px) {
+    .desktop-menu {
+      display: none;
+    }
+  }
+ 
+.mobile-menu{
+    display: none;
+}
+@media (max-width: 480px) {
+    .mobile-menu {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
+    }
+  }
+
+  .nav-small {
+    font-size: 10px;
+  }
+
+  .nav-small a {
+    margin-left: 15px;
+    margin: 0 30px;
+    font-size: 20px;
+  }
+
+.btn{
+    border: 2px solid var(--main-color);
+    padding: 5px 10px;
+}
+.btn:hover{
+    background-color: var(--alt-color);
+    color:#fff;
+}
+/* main*/
+main{
+    background-color:var(--background-color);
+    padding-top:120px ;
+}
+main div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0px 1px 5px 0px #555;
+}
+.article-image{
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+.article-image img{
+    width: 170%;
+}
+.article-content{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    text-align:center;
+}
+.cards-container{
+    display: flex;
+    gap:15px;
+    width: 60%;
+    margin: 40px auto 0 auto;
+}
+.about-section{
+    display: flex;
+}
+.about-section > div{
+    width: 50%;
+}
+.section-image{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/520bc04fe4b03863c7f8a659/1505965654689-F8EUX5I1PDVT66SJ0UU8/spiritual+gifts.jpg?format=2500w");
+    background-size: cover;
+    background-position: center bottom;
+}
+.about-content{
+    padding: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.submit-section{
+    background-color: #c5d5cb;
+    display: flex;
+}
+.input-container{
+    padding: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-container input{
+    width:40%;
+    padding: 20px;
+}
+.input-container h2{
+   font-size:50px ;
+}
+.input-container a{
+    text-decoration: none;
+    color: #444641;
+    border: 2px solid var(--main-color);
+    margin: 20px 0;
+    padding: 5px 10px;
+}
+footer{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.footer-nav{
+    margin: 0 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.foot-container a{
+    padding: 0 50px;
+    text-decoration: none;
+    color:var(--main-color);
+}
+.foot-container i{
+    color:#fff;
+    border-radius: 50%;
+    border: 1px solid #444641;
+    background-color: #444641;
+    font-size: 2em;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+}
